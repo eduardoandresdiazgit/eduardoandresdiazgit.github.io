@@ -9,9 +9,19 @@ h1 {background-color: #5ccd25;
    background-image: url("./images/lichondra.jpg");
  }
 
+#precio {font-size: 100px;
+       text-align: center;
+ /* background-color: yellow; */
+}
 
+#frutas {
 
+  width:800px;
+  height:800px;
+  border:0;
 
-
-
-h2{font-size: 100px;}
+}
+#boton {
+  width:800px;
+  height:300px"
+}
