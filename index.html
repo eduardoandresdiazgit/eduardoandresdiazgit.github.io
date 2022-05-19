@@ -8,6 +8,7 @@
 
 </head>
 <body>
+
   <!-- <section class="buttons">
   <a href="#" class="fa fa-facebook"></a>
   <a href="#" class="fa fa-twitter"></a>
@@ -50,11 +51,15 @@
       </li>
       <li> <a href="#">Contacto</a></li>
     </ul>
-    </nav>
+  </nav>
 
-   <div class="carrusel">
-     <img class="imagencentral" src="./images/img1.jpg" alt="pistola">
-   </div>
+  <div class="carrusel">
+    <img class="imagencentral" src="./images/img1.jpg" alt="" id="mainImage1">
+    <img class="imagencentral" src="./images/img2.jpg" alt="" id="mainImage2">
+    <img class="imagencentral" src="./images/img3.jpg" alt="" id="mainImage3">
+    <img class="imagencentral" src="./images/img4.jpg" alt="" id="mainImage4">
+    <img class="imagencentral" src="./images/img5.jpg" alt="" id="mainImage5">
+  </div>
 
 
 
@@ -62,6 +67,100 @@
 
 
 
+  <script type="text/javascript">
+
+
+  var imagenCarrusel = new Array();
+  imagenCarrusel[0] = new Image();
+  imagenCarrusel[0].src="./images/img1.jpg";
+  imagenCarrusel[1] = new Image();
+  imagenCarrusel[1].src="./images/img2.jpg";
+  imagenCarrusel[2] = new Image();
+  imagenCarrusel[2].src="./images/img3.jpg";
+  imagenCarrusel[3] = new Image();
+  imagenCarrusel[3].src="./images/img4.jpg";
+  imagenCarrusel[4] = new Image();
+  imagenCarrusel[4].src="./images/img5.jpg";
+  var a=0;
+  var carrusel=function(){
+
+    console.log("carrusel");
+
+    console.log(imagenCarrusel[a]);
+    console.log(a);
+    if (a==0) {
+      console.log("entro 0000000000");
+      document.getElementById("mainImage1").src = imagenCarrusel[0].src;
+      document.getElementById("mainImage2").src = imagenCarrusel[1].src;
+      document.getElementById("mainImage3").src = imagenCarrusel[2].src;
+      document.getElementById("mainImage4").src = imagenCarrusel[3].src;
+      document.getElementById("mainImage5").src = imagenCarrusel[4].src;
+
+
+    }else {
+
+    }
+    if (a==1) {
+      console.log("entro11111111");
+      document.getElementById("mainImage1").src = imagenCarrusel[1].src;
+      document.getElementById("mainImage2").src = imagenCarrusel[2].src;
+      document.getElementById("mainImage3").src = imagenCarrusel[3].src;
+      document.getElementById("mainImage4").src = imagenCarrusel[4].src;
+      document.getElementById("mainImage5").src = imagenCarrusel[0].src;
+
+    }else {
+      console.log("entro---------------------------------------------------");
+    }
+    if (a==2) {
+      console.log("entro22222222");
+      document.getElementById("mainImage1").src = imagenCarrusel[2].src;
+      document.getElementById("mainImage2").src = imagenCarrusel[3].src;
+      document.getElementById("mainImage3").src = imagenCarrusel[4].src;
+      document.getElementById("mainImage4").src = imagenCarrusel[0].src;
+      document.getElementById("mainImage5").src = imagenCarrusel[1].src;
+
+    }else {
+      console.log("entro---------------------------------------------------");
+    }
+    if (a==3) {
+      console.log("entro22222222");
+      document.getElementById("mainImage1").src = imagenCarrusel[3].src;
+      document.getElementById("mainImage2").src = imagenCarrusel[4].src;
+      document.getElementById("mainImage3").src = imagenCarrusel[0].src;
+      document.getElementById("mainImage4").src = imagenCarrusel[1].src;
+      document.getElementById("mainImage5").src = imagenCarrusel[2].src;
+
+    }else {
+      console.log("entro---------------------------------------------------");
+    }
+    if (a==4) {
+      console.log("entro22222222");
+      document.getElementById("mainImage1").src = imagenCarrusel[4].src;
+      document.getElementById("mainImage2").src = imagenCarrusel[0].src;
+      document.getElementById("mainImage3").src = imagenCarrusel[1].src;
+      document.getElementById("mainImage4").src = imagenCarrusel[2].src;
+      document.getElementById("mainImage5").src = imagenCarrusel[3].src;
+
+    }else {
+      console.log("entro---------------------------------------------------");
+    }
+
+    a=a+1;
+
+    if (a==5) {
+      a=0;
+      console.log("entro+++++++++++++++++++++++++++++++++++++++++++++++++");
+    }else {
+      console.log("entro---------------------------------------------------");
+    }
+
+  };
+
+  setInterval(carrusel,2000);
+
+
+
+  </script>
 
 </body>
 
