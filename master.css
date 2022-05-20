@@ -3,7 +3,7 @@ body{
 	background: black;
 }
 .encabezado{
-	background-color: yellow;
+	background-color: #ff6600;
 }
 .logo{
 	width: 20%;
@@ -17,7 +17,7 @@ header{
 .navegacion{
 	width: 800px;
 	margin:  auto;
-	background: #fff;
+	background: black;
 }
 
 .navegacion ul{
@@ -32,7 +32,7 @@ header{
 .menu > li > a{
 	display: block;
 	padding: 15px 20px;
-	color: #353535;
+	color: white;
 	font-family: 'Open sans';
 	text-decoration: none;
 }
