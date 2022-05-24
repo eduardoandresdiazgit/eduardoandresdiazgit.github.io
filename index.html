@@ -53,6 +53,8 @@
     </ul>
   </nav>
 
+  <h1 id="titulo">Titulo</h1>
+
   <div class="carrusel">
     <img class="imagencentral" src="./images/img1.jpg" alt="" id="mainImage1">
     <img class="imagencentral" src="./images/img2.jpg" alt="" id="mainImage2">
@@ -69,18 +71,27 @@
 
   <script type="text/javascript">
 
-
+  var tituloCarrusel = new Array();
   var imagenCarrusel = new Array();
+
+
+
   imagenCarrusel[0] = new Image();
+  tituloCarrusel[0] = "Perfect Paint";
   imagenCarrusel[0].src="./images/img1.jpg";
   imagenCarrusel[1] = new Image();
+  tituloCarrusel[1] = "Cortes Ceramicos";
   imagenCarrusel[1].src="./images/img2.jpg";
   imagenCarrusel[2] = new Image();
+  tituloCarrusel[2] = "Copia Contornos";
   imagenCarrusel[2].src="./images/img3.jpg";
   imagenCarrusel[3] = new Image();
+  tituloCarrusel[3] = "Pinturas y Desoxidantes";
   imagenCarrusel[3].src="./images/img4.jpg";
   imagenCarrusel[4] = new Image();
+  tituloCarrusel[4] = "Niveladores Ceramicos";
   imagenCarrusel[4].src="./images/img5.jpg";
+
   var a=0;
   var carrusel=function(){
 
@@ -90,6 +101,7 @@
     console.log(a);
     if (a==0) {
       console.log("entro 0000000000");
+      document.getElementById("titulo").innerHTML = tituloCarrusel[2];
       document.getElementById("mainImage1").src = imagenCarrusel[0].src;
       document.getElementById("mainImage2").src = imagenCarrusel[1].src;
       document.getElementById("mainImage3").src = imagenCarrusel[2].src;
@@ -102,6 +114,7 @@
     }
     if (a==1) {
       console.log("entro11111111");
+      document.getElementById("titulo").innerHTML = tituloCarrusel[3];
       document.getElementById("mainImage1").src = imagenCarrusel[1].src;
       document.getElementById("mainImage2").src = imagenCarrusel[2].src;
       document.getElementById("mainImage3").src = imagenCarrusel[3].src;
@@ -113,6 +126,7 @@
     }
     if (a==2) {
       console.log("entro22222222");
+      document.getElementById("titulo").innerHTML = tituloCarrusel[4];
       document.getElementById("mainImage1").src = imagenCarrusel[2].src;
       document.getElementById("mainImage2").src = imagenCarrusel[3].src;
       document.getElementById("mainImage3").src = imagenCarrusel[4].src;
@@ -124,6 +138,7 @@
     }
     if (a==3) {
       console.log("entro22222222");
+      document.getElementById("titulo").innerHTML = tituloCarrusel[0];
       document.getElementById("mainImage1").src = imagenCarrusel[3].src;
       document.getElementById("mainImage2").src = imagenCarrusel[4].src;
       document.getElementById("mainImage3").src = imagenCarrusel[0].src;
@@ -135,6 +150,7 @@
     }
     if (a==4) {
       console.log("entro22222222");
+      document.getElementById("titulo").innerHTML = tituloCarrusel[1];
       document.getElementById("mainImage1").src = imagenCarrusel[4].src;
       document.getElementById("mainImage2").src = imagenCarrusel[0].src;
       document.getElementById("mainImage3").src = imagenCarrusel[1].src;
