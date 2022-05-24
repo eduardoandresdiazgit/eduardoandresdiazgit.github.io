@@ -53,7 +53,9 @@
     </ul>
   </nav>
 
-  <h1 id="titulo">Titulo</h1>
+
+  <center><h1 id="titulo">titulo</h1></center>
+
 
   <div class="carrusel">
     <img class="imagencentral" src="./images/img1.jpg" alt="" id="mainImage1">
@@ -62,6 +64,13 @@
     <img class="imagencentral" src="./images/img4.jpg" alt="" id="mainImage4">
     <img class="imagencentral" src="./images/img5.jpg" alt="" id="mainImage5">
   </div>
+
+<center><h2 id="det"></h2></center>
+<p>dsfsdfsdf</p>
+
+
+
+
 
 
 
@@ -73,24 +82,30 @@
 
   var tituloCarrusel = new Array();
   var imagenCarrusel = new Array();
+  var detalleCarrusel = new Array();
 
 
 
   imagenCarrusel[0] = new Image();
   tituloCarrusel[0] = "Perfect Paint";
   imagenCarrusel[0].src="./images/img1.jpg";
+  detalleCarrusel[0] = "Pinturas Con Acabado Profesional en poco tiempo";
   imagenCarrusel[1] = new Image();
-  tituloCarrusel[1] = "Cortes Ceramicos";
+  tituloCarrusel[1] = "Regla Angular";
   imagenCarrusel[1].src="./images/img2.jpg";
+  detalleCarrusel[1] = "Realiza Cortes Perfectos";
   imagenCarrusel[2] = new Image();
   tituloCarrusel[2] = "Copia Contornos";
   imagenCarrusel[2].src="./images/img3.jpg";
+  detalleCarrusel[2] = "Copia Contornos Irregulares";
   imagenCarrusel[3] = new Image();
   tituloCarrusel[3] = "Pinturas y Desoxidantes";
   imagenCarrusel[3].src="./images/img4.jpg";
+  detalleCarrusel[3] = "Perfect Paint";
   imagenCarrusel[4] = new Image();
   tituloCarrusel[4] = "Niveladores Ceramicos";
   imagenCarrusel[4].src="./images/img5.jpg";
+  detalleCarrusel[4] = "Perfect Paint";
 
   var a=0;
   var carrusel=function(){
@@ -107,6 +122,7 @@
       document.getElementById("mainImage3").src = imagenCarrusel[2].src;
       document.getElementById("mainImage4").src = imagenCarrusel[3].src;
       document.getElementById("mainImage5").src = imagenCarrusel[4].src;
+      document.getElementById("det").innerHTML = detalleCarrusel[2];
 
 
     }else {
@@ -120,6 +136,7 @@
       document.getElementById("mainImage3").src = imagenCarrusel[3].src;
       document.getElementById("mainImage4").src = imagenCarrusel[4].src;
       document.getElementById("mainImage5").src = imagenCarrusel[0].src;
+      document.getElementById("det").innerHTML = detalleCarrusel[3];
 
     }else {
       console.log("entro---------------------------------------------------");
@@ -132,30 +149,33 @@
       document.getElementById("mainImage3").src = imagenCarrusel[4].src;
       document.getElementById("mainImage4").src = imagenCarrusel[0].src;
       document.getElementById("mainImage5").src = imagenCarrusel[1].src;
+      document.getElementById("det").innerHTML = detalleCarrusel[4];
 
     }else {
       console.log("entro---------------------------------------------------");
     }
     if (a==3) {
-      console.log("entro22222222");
+      console.log("entro33333333");
       document.getElementById("titulo").innerHTML = tituloCarrusel[0];
       document.getElementById("mainImage1").src = imagenCarrusel[3].src;
       document.getElementById("mainImage2").src = imagenCarrusel[4].src;
       document.getElementById("mainImage3").src = imagenCarrusel[0].src;
       document.getElementById("mainImage4").src = imagenCarrusel[1].src;
       document.getElementById("mainImage5").src = imagenCarrusel[2].src;
+      document.getElementById("det").innerHTML = detalleCarrusel[0];
 
     }else {
       console.log("entro---------------------------------------------------");
     }
     if (a==4) {
-      console.log("entro22222222");
+      console.log("entro444444444");
       document.getElementById("titulo").innerHTML = tituloCarrusel[1];
       document.getElementById("mainImage1").src = imagenCarrusel[4].src;
       document.getElementById("mainImage2").src = imagenCarrusel[0].src;
       document.getElementById("mainImage3").src = imagenCarrusel[1].src;
       document.getElementById("mainImage4").src = imagenCarrusel[2].src;
       document.getElementById("mainImage5").src = imagenCarrusel[3].src;
+      document.getElementById("det").innerHTML = detalleCarrusel[1];
 
     }else {
       console.log("entro---------------------------------------------------");

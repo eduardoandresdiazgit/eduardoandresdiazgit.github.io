@@ -6,7 +6,7 @@ body{
 	background-color: #ff6600;
 }
 .logo{
-	width: 20%;
+	width: 15%;
 
 }
 
@@ -88,14 +88,27 @@ header{
 .buttons a:hover {
 	transform: scale(1);
 }
+
+#titulo {
+
+color:  #CE7D35;
+
+
+}
+#det {
+
+color:  #CE7D35;
+
+
+}
 ////////////////////////////////////
 .carrusel{
-	//margin-left: auto;
-	//margin-right: auto;
-	//width: 30%;
+
+
 
 }
 .imagencentral{
+	padding: 0.7%;
 
 
 }
@@ -123,5 +136,6 @@ header{
 	border-radius: 30px;
 	filter: blur(5px);
 }
+
 
 ////////////////////////////////////
