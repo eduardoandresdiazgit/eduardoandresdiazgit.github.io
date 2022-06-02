@@ -41,8 +41,9 @@ header{
 }
 
 .menu li a:hover{
-	color: #CE7D35;
+	color: #ff6600;
 	transition: all .3s;
+
 }
 
 /* Submenu*/
@@ -94,13 +95,13 @@ header{
 
 #titulo {
 
-color:  #CE7D35;
+color:  #ff6600;
 
 
 }
 #det {
 
-color:  #CE7D35;
+color:  #ff6600;
 
 
 }
