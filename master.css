@@ -9,6 +9,9 @@ body{
 	width: 15%;
 
 }
+h1 {
+	color: #ff6600;
+}
 
 header{
 	width: 100%;
@@ -139,3 +142,7 @@ color:  #CE7D35;
 
 
 ////////////////////////////////////
+label {
+	color: white;
+		background-color: #ff6600;
+}

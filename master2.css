@@ -1,0 +1,36 @@
+
+body{
+	background: black;
+  background-image:
+}
+.encabezado{
+	background-color: #ff6600;
+}
+.logo{
+	width: 15%;
+
+}
+h1 {
+	color: #ff6600;
+}
+.formu {
+
+color: #ff6600;
+
+}
+.inputext {
+  box-sizing: border-box;
+  margin: 0px 0 0px 0;
+  padding: 5px;
+  width: 20%;
+
+}
+.inputext2 {
+  box-sizing: border-box;
+  border-color: orange;
+  margin: 40px 0 60px 0;
+  padding: 0px;
+
+  height: 20%;
+
+}
