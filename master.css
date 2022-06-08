@@ -4,22 +4,34 @@ body{
 }
 .encabezado{
 	background-color: #ff6600;
+	padding: 0Px;
+	margin: 0px;
 }
 .logo{
 	width: 15%;
 
 }
+
+center {
+	padding: 0Px;
+	margin: 0px;
+}
 h1 {
 	color: #ff6600;
+	padding: 0px;
+	border: 0%:
 }
 
 header{
+padding-top: 0%;
 	width: 100%;
 }
 
 .navegacion{
+	padding-top: 0%;
+	border: 0%;
 	width: 800px;
-	margin:  auto;
+	margin:  0;
 	background: black;
 }
 
@@ -107,12 +119,13 @@ color:  #ff6600;
 }
 ////////////////////////////////////
 .carrusel{
-
+padding: 0px;
+margin: 0px;
 
 
 }
 .imagencentral{
-	padding: 0.7%;
+	padding: 0%;
 
 
 }
@@ -146,4 +159,38 @@ color:  #ff6600;
 label {
 	color: white;
 		background-color: #ff6600;
+}
+.titulo {
+	color: #ff6600;
+	font-size: 50px;
+	padding: 0px;
+}
+
+.formu {
+
+color: #ff6600;
+
+}
+.inputext {
+
+
+  padding: 5px;
+  width: 20%;
+
+
+
+
+}
+.inputext2 {
+  box-sizing: border-box;
+  border-color: #ff6600;
+  margin: 40px 0 60px 0;
+  padding: 0px;
+
+  height: 20%;
+
+}
+.descripcion {
+	font-size: 150%;
+
 }

@@ -3,54 +3,135 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="master2.css">
+      <link rel="stylesheet" href="master.css">
   </head>
   <body>
     <div class="encabezado">
       <a class="logo" href="./index.html">
         <img class="logo" src="./images/logo.png" alt="Logo">
       </a>
+      </div >
+      <nav class="navegacion">
+        <ul class="menu">
+          <li> <a href="./index.html">Inicio</a></li>
+          <li> <a href="#">Productos</a>
+            <ul class="submenu">
+              <li> <a href="./Perfect_Paint.html">Perfect Paint</a></li>
+              <li> <a href="#">CNC Nasch</a></li>
+              <li> <a href="#">Herramientas Colocacion de Pisos</a></li>
+              <li> <a href="#">Pinturas y Desoxidantes</a></li>
+              <li> <a href="#">Hornos y Cabinas de pintura </a></li>
+              <li> <a href="#">Repuestos</a></li>
+
+            </ul>
+          </li>
+          <li> <a href="#">Servicios</a>
+            <ul class="submenu">
+              <li> <a href="#">Tutoriales</a></li>
+              <li> <a href="#">Garantia</a></li>
+              <li> <a href="#">Repuestos</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
 
 
-    </div >
-    <h1>Contacto</h1>
+
+    <h1>Contacto</h1 id="cont">
     <form  onsubmit="return enviar()" class="formu" id="formu">
 
 
-    <label id="formu">Nombre y Apelllido</label> <br>
-    <input type="text" name="asdasd" value="" class="inputext"> <br>
+    <label id="form_nombre">Nombre y Apelllido</label> <br>
+    <input type="text" name="asdasd" value="" id="f_nombre"> <br>
     <label id="formu">Telefono</label> <br>
-    <input type="number" name="asdasd" value="" class="inputext"> <br>
+    <input type="number" name="asdasd" value="" id="f_telefono"> <br>
     <label id="formu">e-mail</label> <br>
-    <input type="text" name="asdasd" value="" class="inputext"> <br>
+    <input type="text" name="asdasd" value="" id="f_mail"> <br>
     <label>Comentario</label><br>
-    <textarea name="" rows="5" cols="60"></textarea>
+    <textarea name="" rows="5" cols="60" id="f_texto"></textarea>
 
-    <h2>Si desea informacion adicional Marque lo que corresponda</h2>
+    <h2 id="ppp">Si desea informacion adicional Marque lo que corresponda</h2>
     <div class="">
-      <input type="checkbox" name="" value="1">
+      <input type="checkbox" name="" id="check1" >
       <label id="formu">Perfect Paint</label>
-      <input type="checkbox" name="" value="0">
+      <input type="checkbox" name="" id="check2">
       <label id="formu">Pinturas y Desoxidante</label>
-      <input type="checkbox" name="" value="0">
+      <input type="checkbox" name="" id="check3">
       <label id="formu">Niveladores Ceramicos</label><br>
-      <input type="checkbox" name="" value="0">
+      <input type="checkbox" name="" id="check4">
       <label id="formu">Regla Angular</label>
-      <input type="checkbox" name="" value="0">
+      <input type="checkbox" name="" id="check5">
       <label id="formu">Copiador de Contornos</label>
-      <input type="checkbox" name="" value="0">
+      <input type="checkbox" name="" id="check6">
       <label id="formu">Cursos Online</label><br>
-      <input type="checkbox" name="" value="0">
+      <input type="radio" name="" id="check7">
       <label id="formu">Quiero Recibir Novedades Semanales</label><br>
-      <input type="submit" value="Enviar">
+      <input type="button" value="Enviar"  onclick="enviar()">
 
 
     </div>
 
 
 
-  
+
    </form>
 
+   <script type="text/javascript">
+   console.log("prueba");
+
+   var edu = new Array(100);
+
+   function enviar() {
+
+
+   edu[0]= document.getElementById("f_nombre").value;
+   edu[1]= document.getElementById("f_telefono").value;
+   edu[2]= document.getElementById("f_mail").value;
+   edu[3]= document.getElementById("f_texto").value;
+   edu[4]= document.getElementById("check1").checked;
+   edu[5]= document.getElementById("check2").checked;
+   edu[6]= document.getElementById("check3").checked;
+   edu[7]= document.getElementById("check4").checked;
+   edu[8]= document.getElementById("check5").checked;
+   edu[9]= document.getElementById("check6").checked;
+   edu[10]= document.getElementById("check7").checked;
+
+
+     console.log(edu[0]);
+     console.log(edu[1]);
+     console.log(edu[2]);
+     console.log(edu[3]);
+     console.log(edu[4]);
+     console.log(edu[5]);
+     console.log(edu[6]);
+     console.log(edu[7]);
+     console.log(edu[8]);
+     console.log(edu[9]);
+     console.log(edu[10]);
+
+     if (edu[0]=="") {
+       console.log("vacio");
+       var alerta = document.createElement("h1");
+       
+
+
+
+
+     }
+
+     //return false;
+   }
+   function fueradefoco() {
+     if (edu[0]=="") {console.log();("vacio")
+     var alerta=document.createElement("p");
+     alerta.innerHTML="ojo";}
+
+   }
+
+
+   </script>
+
   </body>
+
 </html>
